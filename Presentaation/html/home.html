@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <script src="https://kit.fontawesome.com/07f3717af3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <div class="left-wrap">
+        <div class="logo">
+          <img src="../image/headerlogoB.40f1e4f782b4f0166454.png" alt="">
+        </div>
+        <hr>
+        <a href="../html/profile.html"><div class="profile">
+          <div class="profile-img"></div>
+          <div class="profile-name">Ogunyemi Ayomide</div>
+        </div></a>
+        <hr>
+        <div class="side-navs">
+          <div class="home"><a href="#">
+            <i class="fa-solid fa-house" id="icons"></i> Home
+          </a></div>
+          <div class="line"></div>
+          <div class="home"><a href="../html/lesson.html">
+            <i class="fa-solid fa-laptop-code" id="icons"></i>Lesson
+          </a></div>
+          <div class="home"><a href="../html/message.html">
+            <i class="fa-brands fa-facebook-messenger" id="icons"></i> Message
+          </a></div>
+          <div class="home"><a href="../html/instructors">
+            <i class="fa-solid fa-user" id="icons"></i> Instructors
+          </a></div>
+      </div>
+      <a href="../html/landing.html"><div class="logout">Logout</div></a>
+      </div>
+    </div>
+    <div class="right">
+      <div class="right-wrap">
+        <div class="search">
+          <form action="#">
+            <div class="box">
+              <i class="fa-solid fa-search" id="iconss"></i>
+              <input type="search" name="" id="" placeholder="Search">
+            </div>
+          </form>
+          <div class="ass-btn">
+            <button class="ass"><a href="">Submit Assignment</a></button>
+          </div>
+        </div>
+        <div class="recommend"><h3>Your Lessons</h3></div>
+        <div class="lessons">
+          <div class="rec">
+            <a href="../html/lesson.html"><div class="layer">
+              <span>Continue...</span>
+              <h2>Learn HTML tags</h2>
+            </div>
+          </a>
+          </div>
+          <div class="rec">
+            <a href="../html/lesson.html"><div class="layer">
+              <span>Continue...</span>
+              <h2>CSS pseudo classes</h2>
+            </div>
+            </a>
+          </div>
+          <div class="rec">
+            <a href="../html/lesson.html"><div class="layer">
+              <span>Continue...</span>
+              <h2>JavaScript Functions</h2>
+            </div>
+            </a>
+          </div>
+        </div>
+        <div class="instructor-text"><h3>Instructors</h3></div>
+        <div class="instructors">
+          <a href="../html/instructors"><div class="instructor">
+            <div class="profile-img"></div>
+            <div class="profile-name">Ogunyemi Ayomide</div>
+          </div>
+        </a>
+        <a href="../html/instructors"><div class="instructor">
+          <div class="profile-img"></div>
+          <div class="profile-name">Ogunyemi Ayomide</div>
+        </div>
+      </a>
+      <a href="../html/instructors"><div class="instructor">
+        <div class="profile-img"></div>
+        <div class="profile-name">Ogunyemi Ayomide</div>
+      </div>
+    </a>
+    <a href="../html/instructors"><div class="instructor">
+      <div class="profile-img"></div>
+      <div class="profile-name">Ogunyemi Ayomide</div>
+    </div>
+  </a>
+        </div>
+        <div class="txt">
+          <h3 class="shorts">Shorts</h3>
+          <h3 class="activities">Quick Action</h3>
+        </div>
+        <div class="contents">
+          <div class="vids">
+            <div class="vid">
+              <video src="../video/HTML in 100 Seconds.mp4" controls loop  class="custom-video"></video>
+            </div>
+            <div class="vid">
+              <video src="../video/CSS in 100 Seconds.mp4" controls loop class="custom-video"></video>
+            </div>
+            <div class="vid">
+              <video src="../video/JavaScript in 100 Seconds.mp4" controls loop class="custom-video"></video>
+            </div>
+            <div class="vid">
+              <video src="../video/What's Figma_.mp4" controls loop class="custom-video"></video>
+            </div>
+          </div>
+          <div class="quick-activities">
+            <div class="message-ins">
+              <button class="one"><a href="../html/message.html">Message</a></button>
+            </div>
+            <div class="message-ins">
+              <button class="two"><a href="../html/lesson.html">Lessons</a></button>
+            </div>
+            <div class="message-ins">
+              <button class="three"><a href="#">About us</a></button>
+            </div>
+            <div class="message-ins">
+              <button class="four"><a href="#">More...</a></button>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const videos = document.querySelectorAll('.custom-video');
+      videos.forEach(function(video) {
+        video.currentTime = 2;
+      });
+    });
+  </script>
+</body>
+</html>
